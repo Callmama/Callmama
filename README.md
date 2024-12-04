@@ -1,6 +1,8 @@
-# My Country Mobile
+# Callmama
 
-Welcome to the official repository of **My Country Mobile**, a simple Python package designed to showcase basic functionality and offer a foundation for further development. This project includes essential tools and examples for learning how to create, document, and distribute Python packages.
+Welcome to the official repository of **Callmama**, a Python package designed to simplify global communication through seamless integration of advanced telecom services. Whether you're an individual looking for affordable international calling options or a business aiming to enhance communication infrastructure, Callmama offers tailored solutions to meet your needs.
+
+This repository serves as a starting point for integrating Callmama's telecom services into your applications, with examples and tools to get you started quickly.
 
 ## Table of Contents
 
@@ -14,44 +16,41 @@ Welcome to the official repository of **My Country Mobile**, a simple Python pac
 
 ## About
 
-**[My Country Mobile](https://www.mycountrymobile.com/)** is dedicated to revolutionizing telecom operations with cutting-edge AI tools designed to support businesses in various aspects. Our comprehensive solutions help telecom companies optimize workflows, manage customer interactions, and stay competitive in a rapidly evolving market. We provide a wide range of services that include virtual numbers, bulk SMS, VOIP solutions, and more.
+**[Callmama](https://www.callmama.com/)** bridges the gap in international communication by offering cost-effective, high-quality calling services. With advanced VOIP technology, Callmama provides reliable connectivity and customizable calling plans to suit diverse needs. Its solutions are designed to ensure global reach with minimal setup and maximum efficiency, making it ideal for both personal and professional use.
 
-The below project demonstrates how to structure a Python package, use `setuptools` for packaging, and publish the package to PyPI.
-
+This project showcases how to integrate Callmama’s APIs, demonstrating best practices for creating Python-based communication tools that can scale with your requirements.
 
 ## Features
 
-- **Virtual Number Provider**: Cost-effective and reliable international calling services for businesses.
-- **[Bulk SMS](https://www.smslocal.com/)**: Engage with your audience via targeted SMS campaigns.
-- **VOIP Solutions**: Scalable and flexible voice solutions that simplify communication for businesses.
-- **Cloud-contact Center**: Integrate cloud-based contact center solutions into your applications to streamline customer support and enhance communication efficiency.
-
-
-
+- **Customizable International Calling**: Create personalized calling plans for seamless international communication.
+- **High-Quality Voice Calls**: Experience crystal-clear voice quality, powered by VOIP technology.
+- **Global Compatibility**: Connect to virtually any country with competitive rates and extensive network coverage.
+- **API-Driven Integration**: Easily integrate telecom functionality into your Python applications.
+- **Scalable Cloud Solutions**: Use cloud-based systems to handle high call volumes efficiently.
 
 ## Installation
 
-To install **My Country Mobile** python repo locally, follow these steps:
+Follow these steps to install the **Callmama** Python package:
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Mycountrymobile-com/mcm-python.git
+    git clone https://github.com/Callmama-com/callmama-python.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd mcm-python
+    cd callmama-python
     ```
 
-3. Install dependencies (if any):
+3. Install dependencies:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Install the package locally for development:
+4. Install the package for development:
 
     ```bash
     pip install -e .
@@ -59,39 +58,55 @@ To install **My Country Mobile** python repo locally, follow these steps:
 
 ## Usage
 
-After installing the package, you can use the greeting function as shown below:
+After installation, you can use the package to interact with Callmama's API. Here's an updated example:
 
 ```python
-from my_package import greet
+from callmama_package import initiate_call, get_call_status
 
-# Call the greet function
-message = greet("World")
-print(message)
+# Example: Start a new call
+call_id = initiate_call(
+    from_number="+1234567890",
+    to_number="+1987654321",
+    call_plan="Premium",
+    duration=15  # Duration in minutes
+)
+
+print(f"Call initiated successfully! Call ID: {call_id}")
+
+# Example: Check call status
+status = get_call_status(call_id)
+print(f"Call Status: {status}")
 ```
 
-This will output:
+This will initiate a call and provide updates on its progress. Example outputs might include:
 
 ```
-Hello, World!
+Call initiated successfully! Call ID: cm_12345
+Call Status: In Progress
 ```
 
-Feel free to explore the code, make modifications, and create your own version of the package!
+Feel free to explore additional functions provided by the package to enhance your integration.
 
 ## Contributing
 
-We welcome contributions! If you’d like to help improve **My Country Mobile** python repo, please follow these steps:
+We welcome contributions to make **Callmama** even better! To contribute:
 
 1. Fork the repository.
-2. Create a new branch for your changes.
-3. Make your changes and commit them.
-4. Submit a pull request with a description of your changes.
+2. Create a branch for your feature or bug fix.
+3. Implement and commit your changes.
+4. Submit a pull request with a detailed description of your updates.
 
-For larger changes, please ensure you follow the coding standards and include unit tests for new features where applicable.
+For substantial changes, please discuss your ideas with the maintainers before starting development. Ensure all new code includes relevant tests and follows the project’s coding standards.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Please see the [LICENSE](LICENSE) file for more information.
 
 ## Support
 
-If you discover any issues or have questions, feel free to open an issue on GitHub or email us at [support@mycountrymobile.com](mailto:support@mycountrymobile.com). 
+Need help? Have questions? Encounter issues? Feel free to:
+
+- Open an issue on GitHub.
+- Contact us at [support@callmama.com](mailto:support@callmama.com).
+
+Our team is here to assist you and ensure a smooth experience with **Callmama**.
